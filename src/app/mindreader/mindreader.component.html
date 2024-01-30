@@ -1,0 +1,38 @@
+<div align="center">
+  <div class="card">
+    <h5 class="card-header">MindReader Game</h5>
+    <div class="card-body">
+      <h5 class="card-title">Game Rules</h5>
+      <p class="card-text">Choose Number</p>
+      <button (click)="game(0)" class="btn btn-primary">0</button>
+      <button (click)="game(1)" class="btn btn-primary">1</button>
+      <!-- ScoreBoard Open -->
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Bot Score</h5>
+              <p class="card-text">{{computer_score}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Player Score</h5>
+              <p class="card-text">{{user_score}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ScoreBoard Close -->
+      <!-- Winner Open -->
+      <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <p class="card-text">{{winner}} </p>
+        </div>
+      </div>
+      <!-- Winner Close -->
+    </div>
+ </div>
+</div>
